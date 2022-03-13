@@ -1,0 +1,230 @@
+.section-book {
+  background: linear-gradient(to right, #2191f3, #1453b9);
+  content: "";
+  height: 100%;
+  padding: 8rem 25rem;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+
+  @include respond(tab-land) {
+    padding: 4rem;
+  }
+
+  &-title {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+
+    &-heading {
+      font-size: 3.6rem;
+      font-weight: 300;
+      margin-bottom: 2rem;
+    }
+
+    &-subheading {
+      font-size: 1.6rem;
+      font-weight: 300;
+      padding: 0 6rem;
+      margin: -2rem auto 0.5rem;
+      text-shadow: 1px 1px 1px rgb(22, 10, 10);
+    }
+  }
+
+  &-button {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 2rem 0;
+    padding: 2rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    background: linear-gradient(to right, #2191f3, #1453b9);
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 400;
+    outline: none;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: all 0.1s ease;
+
+    &:hover {
+      box-shadow: 0 3px 8px rgba(#000, 0.6);
+      transform: translateY(-2px);
+    }
+
+    &:active {
+      box-shadow: 0 1px 2px rgba(#000, 0.8);
+
+      transform: translateY(-1px);
+    }
+  }
+}
+
+.booking {
+  background-image: linear-gradient(
+      110deg,
+      (rgba($blue-dark, 0.65) 65%, rgba(39, 38, 38, 0.884) 35%)
+    ),
+    url(../../img/contactbg.jpg);
+  background-size: cover;
+  background-position: center;
+
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  padding: 4rem 8rem;
+
+  @include respond(tab-port) {
+    padding: 4rem;
+  }
+  @include respond(phone) {
+    padding: 4rem 1rem;
+  }
+
+  &-form {
+    padding: 2.8rem 5.2rem;
+    margin: auto;
+    height: 100%;
+  }
+}
+
+.form {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  &-group {
+    margin: 0.2rem;
+    width: 100%;
+    display: inline-block;
+    padding: 0.2rem 1rem 0 0;
+
+    & select {
+      display: inline-flex;
+      flex-grow: 100;
+      width: 100%;
+      outline: none;
+      margin: 0.6rem 0 2rem;
+      background-color: rgba(255, 255, 255, 0.5);
+      font-family: inherit;
+      font-size: 1.2rem;
+      color: rgb(88, 88, 88);
+      padding: 0.5rem 0.9rem;
+    }
+
+    &-full {
+      width: 100%;
+      margin-top: 1rem;
+    }
+
+    &-sub {
+      width: 100%;
+      display: flex;
+      column-count: 2;
+      column-gap: 2rem;
+
+      &-item {
+        display: inline-block;
+        width: 50%;
+
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+
+  &-input {
+    font-size: 1.8rem;
+    color: inherit;
+    padding: 0.5rem 1rem;
+    border-radius: 2px;
+    background-color: rgba(228, 225, 225, 0.774);
+    font-family: inherit;
+    border: none;
+    border-bottom: 3px solid transparent;
+    width: 100%;
+    display: inline;
+    transition: all 0.3s;
+    position: relative;
+
+    &::-webkit-input-placeholder {
+      color: rgb(88, 88, 88);
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+      border-bottom: 3px solid green;
+
+      &:invalid {
+        border-bottom: 3px solid darkgreen;
+      }
+    }
+  }
+
+  &-label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 0.7rem;
+    display: inline-block;
+    transition: all 0.25s;
+    color: #fff;
+  }
+
+  &-input:placeholder-shown + &-label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+  }
+}
+
+textarea {
+  resize: none;
+}
+
+#status {
+  color: #fff;
+  width: 45vw;
+  padding: 2rem 4rem;
+  text-align: center;
+  font-size: 1.9rem;
+  font-weight: 400;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  line-height: 2rem;
+  transition: all 1s ease;
+  z-index: 1001;
+
+  &.success {
+    background-color: #4bca81;
+    animation: statusBar 4s forwards 1s;
+  }
+  &.error {
+    background-color: #ca4b4b;
+    animation: statusBar 4s;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes statusBar {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

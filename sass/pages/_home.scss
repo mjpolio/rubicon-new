@@ -1,0 +1,61 @@
+.section-services {
+  height: 100%;
+  background: linear-gradient(
+      to right bottom,
+      rgba(rgb(97, 97, 97), 0.8),
+      rgba(rgb(31, 30, 30), 0.8)
+    ),
+    url(../../img/services-section.jpg);
+  background-size: cover;
+  background-position: top;
+  padding: 8rem 22rem;
+  position: relative;
+
+  @include respond(tab-land) {
+    padding: 5rem;
+  }
+  @include respond(phone) {
+    padding: 2rem;
+  }
+
+  &-area {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 1rem;
+
+    @include respond(phone) {
+      grid-template-columns: 100%;
+    }
+  }
+}
+.services-explained {
+  height: 100%;
+  background: linear-gradient(to bottom right, rgb(252, 252, 252), #aaa);
+  overflow: hidden;
+  padding: 8rem 24rem;
+}
+
+.section-about {
+  height: 100%;
+  background: linear-gradient(
+      to bottom right,
+      rgba($blue-light, 0.7),
+      rgba($blue-dark, 0.7)
+    ),
+    url(../../img/about.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 8rem 20rem;
+
+  @include respond(tab-land) {
+    padding: 4rem 16rem;
+  }
+
+  @include respond(tab-port) {
+    padding: 4rem 10rem;
+  }
+
+  @include respond(phone) {
+    padding: 4rem;
+  }
+}

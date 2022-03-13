@@ -1,0 +1,164 @@
+.service-item {
+  width: 95%;
+  height: 35rem;
+  margin: 1rem auto;
+  background-color: rgba($color-white, 0.7);
+  padding: 2.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+  transition: transform 0.3s;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-weight: 100;
+
+  // &:hover {
+  //   transform: translateY(-4px);
+  // }
+
+  &-icon {
+    display: flex;
+    background-image: linear-gradient(to right, $blue-light, $blue-dark);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: cover;
+    font-size: 6rem;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    margin-bottom: 1.2rem;
+  }
+
+  &-heading {
+    font-size: 2.3rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+  }
+
+  &-text {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+    margin-bottom: 2rem;
+  }
+}
+
+// SERVICE OVERLAY BOX
+.new-service-overlay {
+  background-color: rgba(rgb(255, 255, 255), 0.99);
+  position: absolute;
+  height: 95vh;
+  width: 75%;
+  z-index: 1000;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @include respond(phone) {
+    width: 90%;
+  }
+}
+
+.activate {
+  display: flex;
+}
+
+.new-service-toggle {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 5rem;
+  width: 5rem;
+  padding: 1rem;
+  z-index: 10000;
+
+  &:hover {
+    filter: brightness(120%);
+    cursor: pointer;
+  }
+}
+
+.bar-new {
+  height: 2px;
+  width: 100%;
+  background-color: rgb(148, 110, 66);
+  border-radius: 1px;
+  margin: 0 auto;
+  transition: all 0.1s ease-in;
+}
+
+.line1-new {
+  transform: rotate(45deg) translate(5px, 5px);
+
+  @include respond(tab-land) {
+    transform: rotate(45deg) translate(4px, 4px);
+  }
+
+  @include respond(phone) {
+    transform: rotate(45deg) translate(2px, 2px);
+  }
+  @include respond(big-desktop) {
+    transform: rotate(45deg) translate(8px, 8px);
+  }
+}
+.line2-new {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.endMsg-new {
+  display: none;
+  padding: 3rem 10rem;
+  height: 70%;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @include respond(tab-port) {
+    padding: 2rem 5rem;
+  }
+
+  @include respond(phone) {
+    padding: 1rem;
+  }
+
+  &-img {
+    height: 20rem;
+    margin: 2rem auto 4rem;
+  }
+
+  &-header {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+
+    @include respond(tab-land) {
+      font-size: 4.5rem;
+    }
+    @include respond(tab-port) {
+      font-size: 3.1rem;
+    }
+  }
+  &-text {
+    font-size: 1.9rem;
+    margin-bottom: 1.5rem;
+
+    @include respond(tab-land) {
+      font-size: 2.6rem;
+    }
+  }
+}
+
+.shown {
+  display: flex;
+}

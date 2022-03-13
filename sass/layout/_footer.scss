@@ -1,0 +1,94 @@
+.footer {
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(88, 88, 88, 0.99),
+    rgba(27, 27, 27, 0.99)
+  );
+  display: flex;
+  column-count: 3;
+  justify-content: center;
+  align-items: center;
+  padding: 0 6rem;
+
+  @include respond(phone) {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  &-item {
+    width: 33%;
+    text-align: center;
+
+    @include respond(phone) {
+      width: 80%;
+      height: 100%;
+      padding: 2rem;
+      margin: 0 auto;
+    }
+  }
+
+  &-logo-box {
+    @include respond(phone) {
+      order: -1;
+      margin-top: 2rem;
+    }
+  }
+  &-copyright {
+    text-transform: uppercase;
+    color: $color-white;
+    font-weight: 400;
+    letter-spacing: 0.15rem;
+
+    @include respond(phone) {
+      font-size: 3rem;
+    }
+  }
+  &-social {
+    width: 30rem;
+    font-size: 4rem;
+    text-align: center;
+    padding: 4rem 0;
+    display: flex;
+    column-count: 3;
+    margin: 0 auto;
+    justify-content: center;
+
+    @include respond(phone) {
+      padding: 1rem 0;
+    }
+
+    &-item {
+      display: flex;
+      height: 10rem;
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+      padding: 1.5rem;
+
+      &-icon {
+        transition: all 0.1s ease-in;
+        &:hover {
+          filter: brightness(150%);
+          transform: translateY(-3px);
+        }
+      }
+    }
+  }
+
+  &-logo {
+    height: 8rem;
+  }
+}
+
+.facebook {
+  color: #3b5998;
+}
+
+.twitter {
+  color: #38a1f3;
+}
+
+.instagram {
+  color: #e1306c;
+}

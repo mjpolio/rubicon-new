@@ -1,0 +1,73 @@
+.btn {
+  &:link,
+  &:visited {
+    padding: 1.5rem 4rem;
+    color: $color-white;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.1s;
+    border-radius: 3px;
+
+    @include respond(phone) {
+      padding: 01rem 2rem;
+      font-size: 2rem;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.4);
+  }
+
+  &-gold {
+    background-color: $color-gold;
+    font-weight: 500;
+  }
+
+  &-blue {
+    background: linear-gradient(to right, $blue-light, $blue-dark);
+
+    @include respond(phone) {
+      padding: 1rem 2rem;
+      font-size: 2rem;
+    }
+  }
+
+  &-small {
+    padding: 1.2rem 2.2rem;
+    font-weight: 400;
+    color: $color-white;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.1s;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    position: absolute;
+    bottom: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    @include respond(phone) {
+      padding: 1rem 2rem;
+      font-size: 2rem;
+    }
+
+    &:hover {
+      transform: translate(-50%, -3px);
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
+    }
+
+    &:active {
+      transform: translate(-50%, -1px);
+      box-shadow: 0 0.5rem 1rem rgba($color-black, 0.4);
+    }
+  }
+}

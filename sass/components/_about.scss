@@ -1,0 +1,31 @@
+.about {
+  &-container {
+    padding: 5rem 15rem;
+    background-color: rgba(#aaa, 0.8);
+
+    @include respond(tab-land) {
+      padding: 4rem 8rem;
+    }
+
+    @include respond(tab-port) {
+      padding: 4rem;
+    }
+
+    @include respond(phone) {
+      padding: 4rem 0;
+    }
+  }
+
+  &-text {
+    font-size: 2.2rem;
+    font-weight: 300;
+    line-height: 2.8rem;
+    margin: 1rem auto;
+    padding: 2rem 4rem;
+
+    &:first-of-type {
+      margin: 0 auto 1rem;
+      padding: 1rem 4rem;
+    }
+  }
+}
