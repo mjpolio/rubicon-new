@@ -17,6 +17,10 @@
 
     &-image {
       height: 5.7rem;
+
+      @include respond(phone) {
+        height: 4.7rem;
+      }
     }
 
     &-text {
@@ -153,8 +157,8 @@
 .nav-active {
   background: linear-gradient(to right, rgb(88, 88, 88), rgb(27, 27, 27));
   display: flex;
-  transform: translateX(0);
-  justify-content: space-around;
+  transform: translateX(-40%);
+  justify-content: space-between;
 
 }
 

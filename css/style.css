@@ -83,7 +83,7 @@ body {
     @media (max-width: 37.5em) {
       .heading-primary-main {
         padding: 1rem;
-        font-size: 8rem; } }
+        font-size: 6.5rem; } }
   .heading-primary-sub {
     display: inline-block;
     font-size: 2.1rem;
@@ -401,6 +401,9 @@ textarea {
     display: flex; }
     .navbar-logo-image {
       height: 5.7rem; }
+      @media (max-width: 37.5em) {
+        .navbar-logo-image {
+          height: 4.7rem; } }
     .navbar-logo-text {
       text-transform: uppercase;
       margin-left: 1rem;
@@ -502,8 +505,8 @@ textarea {
 .nav-active {
   background: linear-gradient(to right, #585858, #1b1b1b);
   display: flex;
-  transform: translateX(0);
-  justify-content: space-around; }
+  transform: translateX(-40%);
+  justify-content: space-between; }
 
 .toggle .line1 {
   transform: rotate(45deg) translate(5px, 6px); }
