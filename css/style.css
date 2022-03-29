@@ -301,6 +301,9 @@ body {
       .form-group-sub-item {
         display: inline-block;
         width: 50%; }
+        @media (max-width: 37.5em) {
+          .form-group-sub-item {
+            width: 100%; } }
         .form-group-sub-item:last-child {
           padding-right: 0; }
   .form-input {
@@ -485,12 +488,13 @@ textarea {
     transform: translateX(100%);
     transition: all 0.2s ease; }
   .navbar-item {
-    font-size: 5rem; } }
+    font-size: 4rem; } }
 
 .nav-active {
   background: linear-gradient(to right, #585858, #1b1b1b);
   display: flex;
-  transform: translateX(0); }
+  transform: translateX(0);
+  justify-content: space-around; }
 
 .toggle .line1 {
   transform: rotate(45deg) translate(5px, 6px); }
@@ -530,6 +534,9 @@ textarea {
     align-items: center;
     height: 10rem;
     margin-bottom: 1.2rem; }
+    @media (max-width: 37.5em) {
+      .service-item-icon {
+        font-size: 4rem; } }
   .service-item-heading {
     font-size: 2.3rem;
     margin-bottom: 3rem;
@@ -726,6 +733,9 @@ textarea {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+    @media (max-width: 37.5em) {
+      .header .text-box {
+        width: 90%; } }
 
 .section-services {
   height: 100%;
@@ -739,7 +749,7 @@ textarea {
       padding: 5rem; } }
   @media (max-width: 37.5em) {
     .section-services {
-      padding: 2rem; } }
+      padding: 6rem 2rem; } }
   .section-services-area {
     display: grid;
     grid-template-columns: 50% 50%;

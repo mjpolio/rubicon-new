@@ -146,7 +146,7 @@
   }
 
   .navbar-item {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }
 
@@ -154,6 +154,8 @@
   background: linear-gradient(to right, rgb(88, 88, 88), rgb(27, 27, 27));
   display: flex;
   transform: translateX(0);
+  justify-content: space-around;
+
 }
 
 .toggle .line1 {

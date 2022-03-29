@@ -131,6 +131,10 @@
         display: inline-block;
         width: 50%;
 
+        @include respond(phone) {
+          width: 100%;
+        }
+
         &:last-child {
           padding-right: 0;
         }

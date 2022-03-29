@@ -15,7 +15,7 @@
     padding: 5rem;
   }
   @include respond(phone) {
-    padding: 2rem;
+    padding: 6rem 2rem;
   }
 
   &-area {

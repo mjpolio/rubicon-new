@@ -29,6 +29,10 @@
     align-items: center;
     height: 10rem;
     margin-bottom: 1.2rem;
+
+    @include respond(phone) {
+      font-size: 4rem;
+    }
   }
 
   &-heading {
