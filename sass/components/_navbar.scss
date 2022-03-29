@@ -139,7 +139,7 @@
     width: 100%;
     position: fixed;
     padding: 30rem 0;
-    top: 10rem;
+    top: 4rem;
     left: 0;
     flex-direction: column;
     align-items: center;
@@ -157,8 +157,8 @@
 .nav-active {
   background: linear-gradient(to right, rgb(88, 88, 88), rgb(27, 27, 27));
   display: flex;
-  transform: translateX(-40%);
-  justify-content: space-between;
+  transform: translateX(0);
+  justify-content: space-around;
 
 }
 

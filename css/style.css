@@ -491,7 +491,7 @@ textarea {
     width: 100%;
     position: fixed;
     padding: 30rem 0;
-    top: 10rem;
+    top: 4rem;
     left: 0;
     flex-direction: column;
     align-items: center;
@@ -505,8 +505,8 @@ textarea {
 .nav-active {
   background: linear-gradient(to right, #585858, #1b1b1b);
   display: flex;
-  transform: translateX(-40%);
-  justify-content: space-between; }
+  transform: translateX(0);
+  justify-content: space-around; }
 
 .toggle .line1 {
   transform: rotate(45deg) translate(5px, 6px); }
