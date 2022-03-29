@@ -13,6 +13,10 @@
       padding: 01rem 2rem;
       font-size: 2rem;
     }
+
+    @include respond(small-lap) {
+      font-size: 1.7rem;
+    }
   }
 
   &:hover {

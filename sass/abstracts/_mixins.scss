@@ -34,6 +34,12 @@ Breakpoints:
       @content;
     }
   }
+  @if $breakpoint == small-lap {
+    //1200
+    @media (max-width: 90em) {
+      @content;
+    }
+  }
   @if $breakpoint == big-desktop {
     //1800
     @media (min-width: 112.5em) {

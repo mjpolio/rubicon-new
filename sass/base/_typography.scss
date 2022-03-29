@@ -12,6 +12,11 @@
     text-indent: $default-font-size;
     animation-name: moveInDown;
     animation-duration: 1s;
+
+    @include respond(small-lap) {
+      padding: 1rem;
+      font-size: 4.8rem;
+    }
   }
 
   &-sub {

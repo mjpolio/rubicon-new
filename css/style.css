@@ -75,6 +75,10 @@ body {
     text-indent: 1.6rem;
     animation-name: moveInDown;
     animation-duration: 1s; }
+    @media (max-width: 90em) {
+      .heading-primary-main {
+        padding: 1rem;
+        font-size: 4.8rem; } }
   .heading-primary-sub {
     display: inline-block;
     font-size: 2.1rem;
@@ -146,6 +150,9 @@ body {
     .btn:link, .btn:visited {
       padding: 01rem 2rem;
       font-size: 2rem; } }
+  @media (max-width: 90em) {
+    .btn:link, .btn:visited {
+      font-size: 1.7rem; } }
 
 .btn:hover {
   transform: translateY(-3px);
@@ -497,138 +504,6 @@ textarea {
 .toggle .line3 {
   transform: rotate(-45deg) translate(5px, -6px); }
 
-.new-service-overlay {
-  background-color: rgba(255, 255, 255, 0.99);
-  position: absolute;
-  height: 95vh;
-  width: 75%;
-  z-index: 1000;
-  display: none;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
-  @media (max-width: 37.5em) {
-    .new-service-overlay {
-      width: 90%; } }
-
-.activate {
-  display: flex; }
-
-.new-service-toggle {
-  position: absolute;
-  top: 3rem;
-  right: 3rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 5rem;
-  width: 5rem;
-  padding: 1rem;
-  z-index: 10000; }
-  .new-service-toggle:hover {
-    filter: brightness(120%);
-    cursor: pointer; }
-
-.bar-new {
-  height: 2px;
-  width: 100%;
-  background-color: #946e42;
-  border-radius: 1px;
-  margin: 0 auto;
-  transition: all 0.1s ease-in; }
-
-.line1-new {
-  transform: rotate(45deg) translate(5px, 5px); }
-  @media (max-width: 75em) {
-    .line1-new {
-      transform: rotate(45deg) translate(4px, 4px); } }
-  @media (max-width: 37.5em) {
-    .line1-new {
-      transform: rotate(45deg) translate(2px, 2px); } }
-  @media (min-width: 112.5em) {
-    .line1-new {
-      transform: rotate(45deg) translate(8px, 8px); } }
-
-.line2-new {
-  transform: rotate(-45deg) translate(5px, -5px); }
-
-.endMsg-new {
-  display: none;
-  padding: 3rem 10rem;
-  height: 70%;
-  width: 90%;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  flex-direction: column;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
-  @media (max-width: 56.25em) {
-    .endMsg-new {
-      padding: 2rem 5rem; } }
-  @media (max-width: 37.5em) {
-    .endMsg-new {
-      padding: 1rem; } }
-  .endMsg-new-img {
-    height: 20rem;
-    margin: 2rem auto 4rem; }
-  .endMsg-new-header {
-    font-size: 3rem;
-    text-transform: uppercase;
-    margin-bottom: 3rem; }
-    @media (max-width: 75em) {
-      .endMsg-new-header {
-        font-size: 4.5rem; } }
-    @media (max-width: 56.25em) {
-      .endMsg-new-header {
-        font-size: 3.1rem; } }
-  .endMsg-new-text {
-    font-size: 1.9rem;
-    margin-bottom: 1.5rem; }
-    @media (max-width: 75em) {
-      .endMsg-new-text {
-        font-size: 2.6rem; } }
-
-.shown {
-  display: flex; }
-
-.services-explained-section {
-  background-color: #fff;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  margin: 5rem auto;
-  padding: 8rem 4rem;
-  position: relative; }
-  .services-explained-section-img {
-    height: 20rem;
-    width: 50%;
-    justify-content: center;
-    align-items: center; }
-  .services-explained-section-text {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .services-explained-section-text-header {
-      font-size: 3rem;
-      margin-bottom: 2rem;
-      text-transform: uppercase; }
-      .services-explained-section-text-header::after {
-        content: "";
-        display: block;
-        margin: 1rem auto;
-        width: 100%;
-        height: 1px;
-        text-align: center;
-        background-color: #000;
-        position: relative;
-        top: 25%; }
-    .services-explained-section-text-description {
-      font-size: 2rem; }
-
 .service-item {
   width: 95%;
   height: 35rem;
@@ -741,6 +616,9 @@ textarea {
   .endMsg-new-img {
     height: 20rem;
     margin: 2rem auto 4rem; }
+    @media (max-width: 90em) {
+      .endMsg-new-img {
+        height: 15rem; } }
   .endMsg-new-header {
     font-size: 3rem;
     text-transform: uppercase;
@@ -751,12 +629,18 @@ textarea {
     @media (max-width: 56.25em) {
       .endMsg-new-header {
         font-size: 3.1rem; } }
+    @media (max-width: 90em) {
+      .endMsg-new-header {
+        font-size: 2.8rem; } }
   .endMsg-new-text {
     font-size: 1.9rem;
     margin-bottom: 1.5rem; }
     @media (max-width: 75em) {
       .endMsg-new-text {
         font-size: 2.6rem; } }
+    @media (max-width: 90em) {
+      .endMsg-new-text {
+        font-size: 1.5rem; } }
 
 .shown {
   display: flex; }
