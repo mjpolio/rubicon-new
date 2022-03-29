@@ -100,16 +100,16 @@
 .line1-new {
   transform: rotate(45deg) translate(5px, 5px);
 
-  @include respond(tab-land) {
-    transform: rotate(45deg) translate(4px, 4px);
-  }
+  // @include respond(tab-land) {
+  //   transform: rotate(45deg) translate(4px, 4px);
+  // }
 
-  @include respond(phone) {
-    transform: rotate(45deg) translate(2px, 2px);
-  }
-  @include respond(big-desktop) {
-    transform: rotate(45deg) translate(8px, 8px);
-  }
+  // @include respond(phone) {
+  //   transform: rotate(45deg) translate(2px, 2px);
+  // }
+  // @include respond(big-desktop) {
+  //   transform: rotate(45deg) translate(8px, 8px);
+  // }
 }
 .line2-new {
   transform: rotate(-45deg) translate(5px, -5px);

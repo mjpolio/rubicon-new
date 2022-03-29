@@ -2,7 +2,8 @@
 0-600       Phone
 600-900     Tablet Portrait
 900-1200    Tablet Landscape
-[1200-1800] Normal
+1200-1440   Small Laptop
+[1440-1800] Normal
 1800+       Big Desktop
 
 Breakpoints:
@@ -79,6 +80,10 @@ body {
       .heading-primary-main {
         padding: 1rem;
         font-size: 4.8rem; } }
+    @media (max-width: 37.5em) {
+      .heading-primary-main {
+        padding: 1rem;
+        font-size: 8rem; } }
   .heading-primary-sub {
     display: inline-block;
     font-size: 2.1rem;
@@ -88,6 +93,10 @@ body {
     padding: 2rem 0;
     animation-name: moveInLeft;
     animation-duration: 3s; }
+    @media (max-width: 37.5em) {
+      .heading-primary-sub {
+        padding: 1rem;
+        font-size: 3rem; } }
     .heading-primary-sub-text {
       display: block;
       margin-top: 1rem; }
@@ -498,9 +507,6 @@ textarea {
 
 .toggle .line1 {
   transform: rotate(45deg) translate(5px, 6px); }
-  @media (max-width: 37.5em) {
-    .toggle .line1 {
-      transform: rotate(45deg) translate(4px, 4px); } }
 
 .toggle .line2 {
   opacity: 0; }
@@ -589,15 +595,6 @@ textarea {
 
 .line1-new {
   transform: rotate(45deg) translate(5px, 5px); }
-  @media (max-width: 75em) {
-    .line1-new {
-      transform: rotate(45deg) translate(4px, 4px); } }
-  @media (max-width: 37.5em) {
-    .line1-new {
-      transform: rotate(45deg) translate(2px, 2px); } }
-  @media (min-width: 112.5em) {
-    .line1-new {
-      transform: rotate(45deg) translate(8px, 8px); } }
 
 .line2-new {
   transform: rotate(-45deg) translate(5px, -5px); }
@@ -733,7 +730,10 @@ textarea {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 90em) {
+      .header .text-box {
+        width: 80%; } }
+    @media (max-width: 75em) {
       .header .text-box {
         width: 90%; } }
 

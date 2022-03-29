@@ -161,9 +161,9 @@
 .toggle .line1 {
   transform: rotate(45deg) translate(5px, 6px);
 
-  @include respond(phone) {
-    transform: rotate(45deg) translate(4px, 4px);
-  }
+  // @include respond(phone) {
+  //   transform: rotate(45deg) translate(4px, 4px);
+  // }
 }
 
 .toggle .line2 {
